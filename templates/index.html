@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block title %}{{ Title }}{% endblock %}
+
+{% block content %}
+<h1>{{ Title }}</h1>
+<p>A minimal server-rendered Go application using Fiber and Pongo2.</p>
+
+<h2>Included tools</h2>
+<ul>
+    {% for item in Items %}
+    <li>{{ item }}</li>
+    {% endfor %}
+</ul>
+{% endblock %}
