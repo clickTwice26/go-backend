@@ -24,6 +24,7 @@ func main() {
 		return c.SendStatus(fiber.StatusOK)
 	})
 
+	app.Get("/about", handlers.About)
 	port := os.Getenv("PORT")
 	if port == "" {
 		port = "8989"
